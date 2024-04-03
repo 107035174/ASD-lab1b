@@ -3,10 +3,6 @@ package edu.miu.cs.cs489appsd.lab1b.productmgmtapp.model;
 import java.time.LocalDate;
 import java.util.Objects;
 import java.util.Random;
-import java.util.RandomAccess;
-import java.util.random.RandomGenerator;
-
-import ch.qos.logback.core.testUtil.RandomUtil;
 
 public class Employee {
 
