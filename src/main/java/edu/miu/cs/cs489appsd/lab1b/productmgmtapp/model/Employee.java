@@ -2,16 +2,14 @@ package edu.miu.cs.cs489appsd.lab1b.productmgmtapp.model;
 
 import java.time.LocalDate;
 import java.util.Objects;
+import java.util.Random;
+import java.util.RandomAccess;
+import java.util.random.RandomGenerator;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import ch.qos.logback.core.testUtil.RandomUtil;
 
-@Entity
 public class Employee {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long employeeId;
     private String firstName;
     private String lastName;
@@ -28,6 +26,7 @@ public class Employee {
     }
 
     public Employee(String firstName, String lastName, double yearlySalary, LocalDate employmentDate) {
+        this.employeeId = new Random().nextLong();
         this.firstName = firstName;
         this.lastName = lastName;
         this.employmentDate = employmentDate;
@@ -76,7 +75,8 @@ public class Employee {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("\n\t{ ");
-        sb.append("\"firstName\":\"").append(this.firstName)
+        sb.append("\"employeeId\":").append(this.employeeId)
+                .append(", \"firstName\":\"").append(this.firstName)
                 .append("\", \"lastName\":\"").append(this.lastName)
                 .append("\", \"yearlySalary\":").append(this.yearlySalary)
                 .append(", \"employmentDate\":\"").append(this.employmentDate)
