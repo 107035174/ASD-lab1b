@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Comparator;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import edu.miu.cs.cs489appsd.lab1b.productmgmtapp.model.Employee;
@@ -22,7 +21,9 @@ public class ProductmgmtappApplication {
 				new Employee("Wesley", "Schneider", 74500.00, LocalDate.of(2019, 05, 02))
 		};
 
+		@SuppressWarnings("unused")
 		PensionPlan p1 = new PensionPlan("EX1089", LocalDate.of(2023, 1, 17), 100.00, emps[0]);
+		@SuppressWarnings("unused")
 		PensionPlan p2 = new PensionPlan("SM2307", LocalDate.of(2019, 11, 4), 1555.50, emps[2]);
 
 		printAll(emps);
