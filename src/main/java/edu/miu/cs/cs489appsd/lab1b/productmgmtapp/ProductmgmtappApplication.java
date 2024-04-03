@@ -4,12 +4,12 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Comparator;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+// import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import edu.miu.cs.cs489appsd.lab1b.productmgmtapp.model.Employee;
 import edu.miu.cs.cs489appsd.lab1b.productmgmtapp.model.PensionPlan;
 
-@SpringBootApplication
+// @SpringBootApplication
 public class ProductmgmtappApplication {
 
 	public static void main(String[] args) {

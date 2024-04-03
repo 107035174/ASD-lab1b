@@ -1,12 +1,12 @@
 package edu.miu.cs.cs489appsd.lab1b.productmgmtapp;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+// @SpringBootTest
 class ProductmgmtappApplicationTests {
 
-	@Test
+	// @Test
 	void contextLoads() {
 	}
 
