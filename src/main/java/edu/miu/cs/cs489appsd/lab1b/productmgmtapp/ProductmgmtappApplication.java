@@ -43,6 +43,9 @@ public class ProductmgmtappApplication {
 		for (Employee e : emps) {
 			str.append(e);
 		}
+		if (str.length() > 2) {
+			str.deleteCharAt(str.length() - 2);
+		}
 		str.append("]");
 		System.out.println(str.toString());
 	}
@@ -58,6 +61,10 @@ public class ProductmgmtappApplication {
 
 			}
 		}
+		if (sb.length() > 2) {
+			sb.deleteCharAt(sb.length() - 2);
+		}
+
 		sb.append("]");
 		System.out.println(sb.toString());
 	}

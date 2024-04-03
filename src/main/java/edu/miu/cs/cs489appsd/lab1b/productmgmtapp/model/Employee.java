@@ -81,7 +81,7 @@ public class Employee {
                 .append("\", \"yearlySalary\":").append(this.yearlySalary)
                 .append(", \"employmentDate\":\"").append(this.employmentDate)
                 .append("\", \"pensionPlan\":").append(this.pensionPlan)
-                .append(" }\n");
+                .append(" },\n");
         return sb.toString();
     }
 
